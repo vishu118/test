@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.main_container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+ 
+}
+
+.wrapper-box {
+    display: flex;
+    max-width: 1240px;
+    min-width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.cover_img{
+    max-width: 100%;
+    object-fit: fill;
+}
+.poster_img{
+    max-width: 20%;
+    border-radius: 10px;
+    margin-right: 2%;
+    margin-left: 3%;
+    min-width: 300px;
+}
+
+.movie_detail_banner{
+    flex: 1;
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.movie_title{
+    font-size: 2.5rem;
+}
+.fa-star{
+    color:#f96681;
+    font-size: 1.5rem;
+}
+.movie_rating_voting{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+.your_rating{
+   background-color: rgb(54, 53, 53);
+   width: 50%;
+   padding: 1rem;
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-between;
+   color: white;
+}
+.rating_text h3{
+    font-size: 1.3rem;
+    margin-bottom: .3rem;
+}
+.rating_text p{
+    color: rgb(220, 218, 218);
+    font-size: 1rem;
+    font-weight: bold;
+}
+.tickt_btn{
+    width: 27%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f94465;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.rate_btn{
+    width: 25%;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.screens,.languages{
+    width: 40%;
+    padding: .3rem;
+    background-color: rgb(224, 222, 222);
+    border-radius: 5px;
+    color: black;
+}
+.other_detail{
+    font-size: 1.1rem;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+.about_movie,.offers,.cast_section,.crew_section,.review_section,.buzz_container,.movie_suggestions{
+    width: 65%;
+    padding-bottom: 2rem;
+    margin-left: 10%;
+    margin-top: 2rem;
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+.about_movie h1,.offers h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.about_movie p{
+    font-size: 1.1rem;
+}
+.limited_offer{
+    width: 45%;
+    padding: 1rem;
+    background-color: #FFF1CC;
+    border-radius: 10px;
+    border: 2px dashed burlywood;
+}
+.limited_offer h2{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.limited_offer p{
+    color: rgb(86, 86, 86);
+}
+.cast_section,.crew_section{
+    padding-bottom: 4rem;
+}
+.cast_container{
+    display: flex;
+    justify-content: start;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.crew_container{
+    display: flex;
+    justify-content:start;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cast_detail,.crew_detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.cast_detail img,.crew_detail img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.cast_name,.crew_name{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.review_section{
+    padding-bottom: 3rem;
+}
+.review_container{
+    display: flex;
+    /* justify-content:space-between; */
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+.reviews{
+    width: 48%;
+    border: 1px solid rgb(193, 191, 191);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: rgb(67, 66, 66);
+}
+.frst_row_review{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.fa-star-review{
+    font-size: 1rem;
+}
+.frst_row_review img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.review_content{
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    margin-bottom: 3rem;
+}
+.last_row_review,.review_like,.review_share,.review_btn{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.review_like,.review_share{
+    gap: 1rem;
+}
+.review_share h2{
+    font-size: .8rem;
+}
+.review_btn{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.review_btn_box{
+    padding: .7rem 1.3rem;
+    border: 1px solid rgb(193, 191, 191);
+    border-radius: 25px;
+    color: #f94465;
+}
+.review_btn_box span{
+    background-color: #e1e0e0;
+    padding: .2rem;
+    border-radius: 5px;
+    color: rgb(84, 84, 84);
+}
+.review_upPart p{
+    font-size: 1.1rem;
+    color: rgb(110, 109, 109);
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+.rivew_name{
+    font-size: 1.5rem;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.buzz_container{
+    padding-bottom: 4rem;
+}
+.buzz_container h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.buzz_review_box_container,.buzz_review_box{
+    display: flex;
+    justify-content: space-between;
+}
+.buzz_review_box{
+   width: 48%;
+   border: 1px solid rgb(193, 191, 191);
+   justify-content: start;
+   flex-wrap: wrap;
+   gap: 1rem;
+   border-radius: 5px;
+}
+.buzz_review_img{
+    width: 120px;
+}
+.buzz_review_content{
+    padding-top: 1rem;
+}
+.buzz_review_content p{
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    color: rgb(72, 71, 71);
+}
+.buzz_reviewer{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.buzz_reviewer p{
+    font-size: .9rem;
+    font-weight: bold;
+    color: #828181;
+}
+.buzz_reviewer span{
+    padding-left: 1rem;
+    color: #cccccc;
+}
+.buzz_review_content img {
+    width: 20px;
+}
+/******************************************MOVIE SUGGESTIONS**********************************************/
+.movie_suggestions{
+    height: 30rem;
+}
+.movie_suggestions h1{
+    font-size: 1.6rem;
+}
+.moviesYouMayLike_container{
+    display: flex;
+    overflow-y: auto;
+    align-items: center;
+    justify-content:center;
+    gap:1.3rem;
+}
+.moviesYouMayLike_container::-webkit-scrollbar{
+    display: none;
+  }
+.moviesYouMayLike img{
+    width:230px;
+    height: 360px;
+    border-radius: 10px;
+}
+.moviesYouMayLike p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/************************************** Media Query  ****************************************************/
+
+@media screen and (max-width:1240px) {
+    .your_rating , .screens , .languages , .other_detail {
+        width: 100%;
+    }
+    .movie_detail_banner a {
+        width: 100%;
+    }
+    .movie_detail_banner a .tickt_btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .wrapper-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .movie_detail_banner {
+        width: 100%;
+    }
+    .poster_img {
+        margin-bottom: 5%;
+    }
+}
+
+
